@@ -1,0 +1,486 @@
+/* Reset CSS */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    font: inherit;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "Fahkwang", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    
+
+     /* Cores principais */
+     --color-primary: #0C4D53;
+     --color-secondary: #F5F5F5;
+     --color-tertiary: #EDDACC;
+     --color-quaternary: #F3759D;
+
+     --color-yellow: #FFE423;
+     --color-orange: #FF6600;
+     --color-white: #fff;
+     --color-desmarcado: var(--color-white);
+
+     /* Cores de texto */
+     --t-color: #1f1f1f;
+     --t-color-second: #424343;
+     --t-color-title: #1f1f1f;
+     --t-color-light: #dde1e5;
+ 
+     /* Core de fundo */
+     --c-bg-destaque: var(--color-second);
+     --c-bg-default: var(--color-nocturnal-expedition);
+     --c-shadow: #e6eaef;
+ 
+     /* Ícones */
+     --icone-atencao: url('caminho/do/icone-atencao.svg');
+     --icone-alerta: url('caminho/do/icone-alerta.svg');
+     --icone-info: url('caminho/do/icone-info.svg');
+}
+/* cores de fundo */
+.bg-primary {
+    background-color: var(--color-primary);
+}
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+.bg-tertiary {
+    background-color: var(--color-tertiary);
+}
+.bg-quaternary {
+    background-color: var(--color-quaternary);
+}
+
+/* Elementos */
+
+
+
+/* Exemplos de uso */
+.exemplo-fundo-destaque {
+    background-color: var(--cor-fundo-destaque);
+}
+
+
+/* Exemplos de ícones */
+.exemplo-icone-atencao {
+    background-image: var(--icone-atencao);
+}
+
+.exemplo-icone-alerta {
+    background-image: var(--icone-alerta);
+}
+
+.exemplo-icone-info {
+    background-image: var(--icone-info);
+}
+
+.link-color{
+    color: var(--color-yellow);
+}
+.icon-small {
+    width: 6.4rem;
+    height: 6.4rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    border-radius: 50%;
+    background-color: transparent;
+    float: left;
+    margin-right: 1.6rem;
+}
+html,
+body {
+    position: relative;
+    font-size:62.5%;
+    margin-inline: auto;
+    direction: ltr;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: var(--t-color);
+    background-color: #f1f1f1;
+}
+
+a,
+span,
+button,
+input {
+    display: block;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+input {
+    width: 100%;
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+.t-center{
+    text-align: center;
+}
+.b-center {
+    margin: 0 auto;
+}
+.btn {
+    font-weight: 600;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+    height: 6.4rem;
+    padding: 0 0.75rem;
+    border-radius: 0.625rem;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    border: solid 1px transparent;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    margin-block: 4rem;
+    cursor: pointer;
+}
+.btn-default {
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);    
+}
+.btn-destaque {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+.icon {
+    pointer-events: none;
+}
+address {
+    font-style: normal;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem
+    }
+
+header {
+    padding-block: 4rem;
+}
+/* Cabeçalhos (h1 até h6) */
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 4.8rem; /* Tamanho do h1 */
+    line-height: 5.5rem;
+    font-weight: 550;
+}
+
+h2 {
+    font-size: 3.2rem; /* Tamanho do h2 */
+    line-height: 3.8rem;
+    margin-bottom: 2.4rem;
+    font-weight: 550;
+}
+
+h3 {
+    font-size: 2.4rem; /* Tamanho do h3 */
+    line-height: 3.2rem;
+    margin-bottom: 1.6rem;
+    font-weight: 550;
+}
+
+h4 {
+    font-size: 1.4rem; /* Tamanho do h4 */
+    margin-bottom: 0.6rem; /* Espaçamento inferior */
+}
+
+h5 {
+    font-size: 1.2rem; /* Tamanho do h5 */
+    margin-bottom: 0.4rem; /* Espaçamento inferior */
+}
+
+h6 {
+    font-size: 1.1rem; /* Tamanho do h6 */
+    margin-bottom: 0.2rem; /* Espaçamento inferior */
+}
+
+/* paragrafo e demais textos */
+p {
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+    text-align: justify;
+}
+  
+ul {
+    clear: both;
+    margin-top: 4rem;
+}
+
+li {
+    
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    text-align: justify;
+}
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+b {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+.details {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+.small {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+}
+@media screen and (max-width: 576px) {
+    .flex {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }    /* Adicione estilos para outros cabeçalhos conforme necessário */
+}
+
+/* Media queries para ajustar os tamanhos das fontes com base no tamanho da tela */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    /* Adicione estilos para outros cabeçalhos conforme necessário */
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    /* Adicione estilos para outros cabeçalhos conforme necessário */
+}
+
+input,
+button,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding-block: 6.4rem;
+
+    @media (max-width: 640px) {
+        padding-block: 4rem;
+    }
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 144rem;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem; /* Adicionando um espaçamento entre as colunas */
+    margin-block: 2rem;
+}
+
+/* Columns */
+.col-1 { width: calc(8.33% - 1.6rem); }
+.col-2 { width: calc(16.66% - 1.6rem); }
+.col-3 { width: calc(23% - 1.6rem); }
+.col-4 { width: calc(33.33% - 1.6rem); }
+.col-5 { width: calc(41.66% - 1.6rem); }
+.col-6 { width: calc(50% - 1.6rem); }
+.col-7 { width: calc(58.33% - 1.6rem); }
+.col-8 { width: calc(66.66% - 1.6rem); }
+.col-9 { width: calc(75% - 1.6rem); }
+.col-10 { width: calc(83.33% - 1.6rem); }
+.col-11 { width: calc(91.66% - 1.6rem); }
+.col-12 { width: calc(100% - 1.6rem); }
+
+/* Header */
+.header {
+    color: var(--color-secondary);
+    text-align: left;
+    padding-top: 4rem;
+    padding-bottom: 6.4rem;
+    background-image: url(./img/bg.svg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header img{
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+.header h1 span {
+    text-align: unset;
+    display: unset;
+    font-size: unset;
+}
+.header .col-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .container > .row .col-4 {
+    padding: 3.2rem;
+    border-radius: 1.8rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.container > .row .col-4:nth-child(even){
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.container > .row .col-6 {
+    padding: 3.2rem;
+    border-radius: 1.8rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.container > .row .col-6:nth-child(even) {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+header .col-4 {
+    background-color: unset;
+    box-shadow: unset;
+} */
+
+
+/* vantagens Section */
+.vantagens {
+    color: var(--color-primary);
+}
+.vantagens header {
+    text-align: center;
+}
+.vantagens header .col-4 { 
+    order: 2;
+}
+.vantagens img {
+    margin: auto;
+}
+
+/* Seja revendedora Section */
+.seja-revendedora header .col-4 {
+    order: 2;
+}
+.seja-revendedora header {
+    text-align: center;
+}
+.seja-revendedora img{
+    margin: auto;
+}
+
+footer {
+    background-color: var(--color-nocturnal-expedition);
+    color: var(--c-shadow);
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .col-1, .col-2, .col-3, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .col-4 {
+    width: 45%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .col-4 {
+    width: 100%;
+    }
+}
+/* Menu */
+.menu-topo {
+    margin-block: 4rem;
+}
+.menu-topo .link {
+    flex: 1 1 30%; /* Define a largura para desktop (col-4) */
+    text-align: center;
+    padding: 3.2rem;
+    background-color: #FFF !important;
+    color: var(--t-color) !important;
+    text-decoration: none;
+    border-radius: .5rem !important;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.menu-topo .link:hover {
+    background-color: var(--color-yellow) !important;
+}
+
+@media (max-width: 768px) {
+    .link {
+        flex-basis: 100% !important; /* Define a largura para dispositivos móveis (col-12) */
+    }
+}
